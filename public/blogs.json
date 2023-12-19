@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/nBmnPG2/1.jpg",
+      "title": "The Adventure Begins",
+      "author": "John Doe",
+      "author_img": "https://i.ibb.co/pwqKt8C/boy1.png",
+      "posted_date": "2023-11-10",
+      "reading_time": 15,
+      "hashtags": ["adventure", "story"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/rtH0JX8/2.png",
+      "title": "Coding Mastery",
+      "author": "Jane Smith",
+      "author_img": "https://i.ibb.co/J7qNjzp/boy2.jpg",
+      "posted_date": "2023-11-09",
+      "reading_time": 20,
+      "hashtags": ["coding", "programming"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/PZKdS8T/3.png",
+      "title": "Cooking Delights",
+      "author": "Alice Johnson",
+      "author_img": "https://i.ibb.co/gdbswnx/girl1.jpg",
+      "posted_date": "2023-11-08",
+      "reading_time": 30,
+      "hashtags": ["cooking", "recipes"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/zGkX63B/4.jpg",
+      "title": "Mindfulness Meditation",
+      "author": "Michael Brown",
+      "author_img": "https://i.ibb.co/fx1Cyd1/girl2.jpg",
+      "posted_date": "2023-11-07",
+      "reading_time": 25,
+      "hashtags": ["mindfulness", "meditation"]
+    }
+  ]
+  
