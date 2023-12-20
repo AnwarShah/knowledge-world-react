@@ -4,9 +4,9 @@ const Blog = ({blog}) => {
     const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
 
     return (
-        <div>
-            <img src={cover} alt={`Cover picture of the blog ${title}`} />
-            <div className='flex justify-between'>
+        <div className='mb-16'>
+            <img className='w-full mb-8 rounded-lg' src={cover} alt={`Cover picture of the blog ${title}`} />
+            <div className='flex justify-between mb-4'>
                 <div className='flex gap-6'>
                     <img className='w-16' src={author_img} alt="" />
                     <div>
@@ -18,7 +18,7 @@ const Blog = ({blog}) => {
                     <span>{reading_time} min read</span>
                 </div>
             </div>
-            <h2 className='text-4xl'>{title}</h2>
+            <h2 className='text-4xl mb-2'>{title}</h2>
             <p>
                 {
                     hashtags.map( (hash,idx) => <span key={idx}><a href="#">#{hash}</a> </span>)
