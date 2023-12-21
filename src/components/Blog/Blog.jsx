@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FiBookmark } from "react-icons/fi";
 
 const Blog = ({blog, handleAddToBookmarks, handleMarkAsRead}) => {
-    const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
+    const {id, title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
 
     return (
         <div className='mb-16'>
@@ -26,7 +26,7 @@ const Blog = ({blog, handleAddToBookmarks, handleMarkAsRead}) => {
                 }
             </p>
             <button className='font-bold text-blue-600 underline'
-            onClick={() => handleMarkAsRead(reading_time)}>Mark as read</button>     
+            onClick={() => handleMarkAsRead(id, reading_time)}>Mark as read</button>     
         </div>
     );
 };
