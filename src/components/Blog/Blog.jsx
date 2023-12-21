@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import { FiBookmark } from "react-icons/fi";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmarks}) => {
     const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
 
     return (
@@ -15,7 +16,7 @@ const Blog = ({blog}) => {
                     </div>
                 </div>
                 <div>
-                    <span>{reading_time} min read</span>
+                    <span className='flex items-center gap-x-1'>{reading_time} min read <button onClick={handleAddToBookmarks} href='#'><FiBookmark /></button></span>
                 </div>
             </div>
             <h2 className='text-4xl mb-2'>{title}</h2>
