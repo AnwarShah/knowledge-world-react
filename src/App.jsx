@@ -10,6 +10,7 @@ function App() {
 
   const handleAddToBookmarks = (blog) => {
     setBookmarks([...bookmarks, blog]);
+    console.log(bookmarks);
   }
 
   return (
@@ -17,7 +18,7 @@ function App() {
       <Header></Header>
       <div className='md:flex max-w-7xl mx-auto gap-x-4'>
         <Blogs handleAddToBookmarks={handleAddToBookmarks}></Blogs>
-        <Bookmarks></Bookmarks>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </div>
     </>
   )
